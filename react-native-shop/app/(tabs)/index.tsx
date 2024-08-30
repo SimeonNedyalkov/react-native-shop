@@ -3,8 +3,8 @@ export default function HomeScreen() {
   return (
     <View style={styles.titleContainer}>
       <View style={{flex:10}}>
-        <ImageBackground source={require('../../assets/images/pexels-photo-5894614.webp')} resizeMode="cover" style={styles.image}>
-          <Image source={require('../../assets/images/R.png')} style={styles.logo}/>
+        <ImageBackground source={require('../../assets/images/pexels-claudia-schmalz-5894614.jpg')} resizeMode='cover' style={styles.image}>
+          <Image source={require('../../assets/images/Mebeli Chudo_transparent-.png')} style={styles.logo}/>
           <Text style={styles.text}>Sell What You Don't Need</Text>
         </ImageBackground>
       </View>
@@ -24,23 +24,29 @@ const styles = StyleSheet.create({
   },
   image: {
     flex:1,
-    width:'100%',
-    height:'100%',
+    resizeMode: 'cover',
+    height: 'auto',
+    width: 'auto',
     justifyContent: 'center',
+    alignContent:'center',
+    alignItems:'center'
   },
   text: {
+    flex:1,
     color: 'black',
     fontSize: 24,
     lineHeight: 50,
     fontWeight: 'bold',
     bottom:120,
     textAlign: 'center',
-    
+    position:'absolute',
+    top:180
   },
   logo:{
-    width:100,
-    height:100,
-    bottom:150,
-    left:150
+    flex:1,
+    width:200,
+    height:200,
+    position:'absolute',
+    top:20
   }
 });

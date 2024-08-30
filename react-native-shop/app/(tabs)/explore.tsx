@@ -9,7 +9,6 @@ export default function HomeScreen() {
       
       <View style={{flex:8}}>
         <Image source={require('../../assets/images/white-chair-room_786255-18256.jpg')} style={styles.image}>
-
         </Image>
       </View>
       <View style={{flex:2,backgroundColor:'black',width:'100%'}}>
