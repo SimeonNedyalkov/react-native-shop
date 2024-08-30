@@ -1,19 +1,18 @@
-import { Image, StyleSheet, Platform,View, Text,ImageBackground } from 'react-native';
+import { Image, StyleSheet, Platform,View, Text,ImageBackground, Button } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.titleContainer}>
-      <View style={{flex:10}}>
+      <View style={{flex:18}}>
         <ImageBackground source={require('../../assets/images/pexels-claudia-schmalz-5894614.jpg')} resizeMode='cover' style={styles.image}>
           <Image source={require('../../assets/images/Mebeli Chudo_transparent-.png')} style={styles.logo}/>
           <Text style={styles.text}>Sell What You Don't Need</Text>
+        <View style={{flex:1,width:'100%',justifyContent:'flex-end',gap:1}}>
+          <Button color="#fc5c65" title='Login' onPress={()=>{alert('You have logged in')}}></Button>
+          <Button color="#4ecdc4" title='Register' onPress={()=>{alert('You are registered')}}></Button>
+        </View>
         </ImageBackground>
       </View>
-      <View style={{flex:1,backgroundColor:'orange',width:'100%'}}>
-        <Text>Hello</Text>
-      </View>
-      <View style={{flex:1,backgroundColor:'green',width:'100%'}}>
-        <Text>Hello</Text>
-      </View>
+      
     </View>
   );
 }
