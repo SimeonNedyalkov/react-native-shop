@@ -5,7 +5,7 @@ export default function HomeScreen() {
       <View style={{flex:18}}>
         <ImageBackground source={require('../../assets/images/pexels-claudia-schmalz-5894614.jpg')} resizeMode='cover' style={styles.image}>
           <Image source={require('../../assets/images/Mebeli Chudo_transparent-.png')} style={styles.logo}/>
-          <Text style={styles.text}>Sell What You Don't Need</Text>
+          <Text style={styles.text}>The Magic of Your Home!</Text>
         <View style={{flex:1,width:'100%',justifyContent:'flex-end',gap:1}}>
           <Button color="#fc5c65" title='Login' onPress={()=>{alert('You have logged in')}}></Button>
           <Button color="#4ecdc4" title='Register' onPress={()=>{alert('You are registered')}}></Button>
